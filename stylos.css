@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(207, 221, 228);
+    font-family: 'Open sans';
+    margin: 0;
+}
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tabla {
+    width: 33%;
+    height: 490px;
+    margin: auto;
+    border: 1px solid #343759;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #343759;
+    padding: 15px;
+    text-align: center;
+    flex-wrap: 1;
+    color: #000000;
+
+}
+.tabla>h2 {
+    font-size: 30px;
+    margin-bottom: 35px
+}
+.tabla img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 35px;
+    border-radius: 45px;
+
+}
+.tabla > h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.tabla > p {
+    display: block;
+    margin-bottom: 20px;
+
+}
+.boton {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: #a5f059;
+    text-decoration: none;
+    color: #343759;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+.tabla:hover {
+    background: #343759;
+    color: #f1f1f2;
+    transition: 0.1 all;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .tabla {
+        width: 45%;
+        max-width: none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+    }
+}
+@media screen and (max-width: 700px) {
+    .tabla {
+        width: 45%;
+        padding: 30px;
+    }
+    .tabla > h2 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .tabla {
+        width: 85%;
+        padding: 20px;
+    }
+}
+span {
+    color: red;
+    font-size: 25px;
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.header {
+    background: #1572be;
+    color: white;
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.4em;
+}
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    transition: all 0.4s linear;
+    border-radius: 10px;
+}
+
+.navigation ul li a:hover {
+    background: #4a4a4a;
+}
+
+.main {
+    padding-top: 5rem;
+}
